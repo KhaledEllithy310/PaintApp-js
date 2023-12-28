@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Paint App</title>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+      integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <div class="container">
+      <section class="tools-board">
+        <div class="row">
+          <label class="title">Shapes</label>
+          <ul class="options">
+            <li class="option tool" id="rectangle">
+              <button><i class="fa-solid fa-square"></i></button>
+            </li>
+            <li class="option tool" id="circle">
+              <button><i class="fa-solid fa-circle"></i></button>
+            </li>
+            <li class="active option tool" id="freeHand">
+              <button><i class="fa-brands fa-skyatlas"></i></button>
+            </li>
+            <li class="option tool" id="line">
+              <button><i class="fa-solid fa-slash"></i></button>
+            </li>
+            <li class="option tool" id="eraser">
+              <button><i class="fa-solid fa-eraser"></i></button>
+            </li>
+          </ul>
+        </div>
+      </section>
+      <section class="drawing-board">
+        <canvas></canvas>
+      </section>
+    </div>
+    <script src="main.js"></script>
+  </body>
+</html>
